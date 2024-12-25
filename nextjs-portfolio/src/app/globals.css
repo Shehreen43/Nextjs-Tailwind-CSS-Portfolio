@@ -81,14 +81,20 @@
   .hoverEffect {
     @apply transition-all duration-300 cursor-pointer ease-in-out;
   }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
 }
 
-/* :root {
+:root {
   --font-raleway: "Raleway", sans-serif;
 }
 body{
   font-family: var(--font-raleway);
-} */
+}
 
 @font-face {
   font-family: "JetBrains Mono";
