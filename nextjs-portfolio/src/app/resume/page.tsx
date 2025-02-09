@@ -1,165 +1,461 @@
-"use client";
-import PageLayout from "@/components/PageLayout";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Briefcase, Calendar, Code2, GraduationCap, User } from "lucide-react";
-import {motion} from "framer-motion";
+// "use client";
+// import PageLayout from "@/components/PageLayout";
+// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+// import { Briefcase, Calendar, Code2, GraduationCap, User } from "lucide-react";
+// import {motion} from "framer-motion";
 
+
+// const tabMenu = [
+//   { title: "Experience", value: "experience", icon: Briefcase },
+//   { title: "Education", value: "education", icon: GraduationCap },
+//   { title: "Skills", value: "skills", icon: Code2 },
+//   { title: "About Me", value: "about", icon: User },
+// ];
+
+// const tabContent = {
+//   experience: {
+//     title: "Perfessional Experience",
+//     items: [
+//       {
+//         role: "Frontend Developer",
+//         company: "Freelancer",
+//         period: "2023 - Present",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+//         highlights: ["React", "Next.js", "Typescript", "Team", "LeaderShip"],
+//       },
+//       {
+//         role: "Frontend Developer",
+//         company: "Freelancer",
+//         period: "2023 - Present",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+//         highlights: ["React", "Next.js", "Typescript", "Team", "LeaderShip"],
+//       },
+//     ],
+//   },
+//   education: {
+//     title: "Educatonal Background",
+//     items: [
+//       {
+//         degree: "AI Engineer",
+//         institution: "GIAIC ",
+//         period: "2024 - Present",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+//         Achievement: [
+//           "Typescript Developer",
+//           "UIUX Engineer",
+//           "Frontend Developer",
+//         ],
+//       },
+//       {
+//         degree: "AI Engineer",
+//         institution: "GIAIC ",
+//         period: "2024 - Present",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+//         Achievement: [
+//           "Typescript Developer",
+//           "UIUX Engineer",
+//           "Frontend Developer",
+//         ],
+//       },
+//     ],
+//   },
+//   skills: {
+//     title: "Techical Skills",
+//     categories: [
+//       {
+//         name: "Frontend Development",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
+//         skills: ["React", "Next.js", "Tailwind CSS", "Typescript", "HTML"],
+//       },
+//       {
+//         name: "Backend Development",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
+//         skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "Prisma"],
+//       },
+//       {
+//         name: "Tools & Other Skills",
+//         description:
+//           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
+//         skills: ["Git", "GitHub", "Docker", "Kubernetes", "AWS"],
+//       },
+//     ],
+//   },
+//   about: {
+//     title: "About Me",
+//    bio:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
+//    interests: [
+//     "Open Source Contributing",
+//     "Teach Blogging",
+//      "UI/UX Design",
+//      "Web Development",
+//    ],
+//     languages: ["English (Native)","English (Intermediate)"],
+//     contact: {
+//       email: "example@example.com",
+//       phone: "+1234567890",
+//       address: "123 Main St, City, Country",
+//     },
+//   }
+// };
+
+
+// const ResumePage = () => {
+//   return (
+//     <div className="flex flex-col justify-center py-10">
+//       <PageLayout>
+//         <Tabs
+//           defaultValue="experience"
+//           className="w-full flex flex-col md:flex-row gap-6 md:gap-11"
+//         >
+//           <TabsList className="flex md:flex-col h-full bg-transparent md:w-64 gap-4">
+//             {tabMenu?.map((item) => (
+//               <TabsTrigger
+//                 key={item?.value}
+//                 value={item?.value}
+//                 className="bg-white/10 w-full py-2.5 text-white data-[state=active]:bg-hoverColor hover:bg-lightSky/50 text-xs sm:text-sm"
+//               >
+//                 <div className="flex items-center gap-1.5 md:w-[50%] md:gap-3">
+//                   <item.icon className="h-4 w-4 sm:h-5 sm:w-5" />
+//                   {item?.title}
+//                 </div>
+//               </TabsTrigger>
+//             ))}
+//           </TabsList>
+//           <div className="flex-1 min-h-[400px]">
+//             <TabsContent value="experience">
+//               <motion.h2
+//               initial={{opacity: 0}}
+//               animate={{opacity: 1}}
+//               className="text-2xl font-bold text-lightSky"
+//               >{tabContent.experience.title}</motion.h2>
+              
+//                 <div className="space-y-6 w-full">
+//                 {tabContent?.experience?.items.map((item, index) => (
+//                   <motion.div key={index} className="border rounded-lg border-lightSky/20 p-6">
+//                    <div className="flex items-start justify-between mb-4">
+//                     <div>
+//                       <h3 className="text-lg font-semibold">{item?.role}</h3>
+//                       <p className="text-muted-foreground">{item?.company}</p>
+//                     </div>
+//                     <div className="flex items-center text-muted-foreground">
+//                       <Calendar className="h-4 w-4 mr-2"/>
+//                       {item?.period}
+//                     </div>
+//                    </div>
+//                    <p className="mb-4 text-white">{item?.description}</p>
+//                   </motion.div>
+                
+
+//                 ))}
+//              </div>
+//             </TabsContent>
+//           </div>
+//         </Tabs>
+//       </PageLayout>
+//     </div>
+//   );
+// };
+
+// export default ResumePage;
+
+
+"use client";
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import { Calendar, GraduationCap, Briefcase, Code2, User } from "lucide-react";
+import Container from "@/components/Container";
 
 const tabMenu = [
   { title: "Experience", value: "experience", icon: Briefcase },
   { title: "Education", value: "education", icon: GraduationCap },
   { title: "Skills", value: "skills", icon: Code2 },
-  { title: "About Me", value: "about", icon: User },
+  { title: "About me", value: "about", icon: User },
 ];
 
 const tabContent = {
   experience: {
-    title: "Perfessional Experience",
+    title: "Professional Experience",
     items: [
       {
-        role: "Frontend Developer",
-        company: "Freelancer",
-        period: "2023 - Present",
+        role: "Senior Frontend Developer",
+        company: "Tech Solutions Inc.",
+        period: "2021 - Present",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        highlights: ["React", "Next.js", "Typescript", "Team", "LeaderShip"],
+          "Led the development of multiple React-based web applications, improving performance by 40%. Mentored junior developers and implemented best practices for code quality.",
+        highlights: ["React", "Next.js", "TypeScript", "Team Leadership"],
       },
       {
-        role: "Frontend Developer",
-        company: "Freelancer",
-        period: "2023 - Present",
+        role: "Full Stack Developer",
+        company: "Digital Innovations Ltd",
+        period: "2018 - 2021",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        highlights: ["React", "Next.js", "Typescript", "Team", "LeaderShip"],
+          "Developed and maintained full-stack applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality solutions.",
+        highlights: ["Node.js", "React", "MongoDB", "AWS"],
       },
     ],
   },
   education: {
-    title: "Educatonal Background",
+    title: "Educational Background",
     items: [
       {
-        degree: "AI Engineer",
-        institution: "GIAIC ",
-        period: "2024 - Present",
+        degree: "Master of Computer Science",
+        institution: "Tech University",
+        period: "2016 - 2018",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        Achievement: [
-          "Typescript Developer",
-          "UIUX Engineer",
-          "Frontend Developer",
-        ],
+          "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors.",
+        achievements: ["4.0 GPA", "Research Publication", "Dean's List"],
       },
       {
-        degree: "AI Engineer",
-        institution: "GIAIC ",
-        period: "2024 - Present",
+        degree: "Bachelor of Computer Science",
+        institution: "State University",
+        period: "2012 - 2016",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        Achievement: [
-          "Typescript Developer",
-          "UIUX Engineer",
-          "Frontend Developer",
-        ],
+          "Foundation in computer science principles, data structures, and algorithms.",
+        achievements: ["Academic Excellence Award", "Programming Club Lead"],
       },
     ],
   },
   skills: {
-    title: "Techical Skills",
+    title: "Technical Skills",
     categories: [
       {
         name: "Frontend Development",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
-        skills: ["React", "Next.js", "Tailwind CSS", "Typescript", "HTML"],
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        skills: [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+        ],
       },
       {
         name: "Backend Development",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
-        skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "Prisma"],
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        skills: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
       },
       {
-        name: "Tools & Other Skills",
+        name: "Tools & Others",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
-        skills: ["Git", "GitHub", "Docker", "Kubernetes", "AWS"],
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, distinctio. Quas fugiat nesciunt ipsum. Voluptatem inventore iste labore, similique quod laudantium rerum dolor, impedit voluptas distinctio praesentium quibusdam veniam tempore. Laudantium repellendus possimus adipisci maxime.",
+        skills: ["Git", "Docker", "AWS", "CI/CD", "Agile Methodologies"],
       },
     ],
   },
   about: {
     title: "About Me",
-   bio:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat optio excepturi. Voluptate, vero nisi.",
-   interests: [
-    "Open Source Contributing",
-    "Teach Blogging",
-     "UI/UX Design",
-     "Web Development",
-   ],
-    languages: ["English (Native)","English (Intermediate)"],
-    contact: {
-      email: "example@example.com",
-      phone: "+1234567890",
-      address: "123 Main St, City, Country",
-    },
-  }
+    bio: "Passionate software developer with over 5 years of experience in building modern web applications. Committed to writing clean, maintainable code and staying current with emerging technologies. Strong advocate for user-centric design and accessibility.",
+    interests: [
+      "Open Source Contributing",
+      "Tech Blogging",
+      "UI/UX Design",
+      "Machine Learning",
+    ],
+    languages: ["English (Native)", "Spanish (Intermediate)", "German (Basic)"],
+  },
 };
 
-
-const ResumePage = () => {
+export default function ResumePage() {
   return (
-    <div className="flex flex-col justify-center py-10">
-      <PageLayout>
-        <Tabs
-          defaultValue="experience"
-          className="w-full flex flex-col md:flex-row gap-6 md:gap-11"
+    <section className="flex flex-col justify-center text-white py-10">
+      <Container>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+          }}
+          className="w-full"
         >
-          <TabsList className="flex md:flex-col h-full bg-transparent md:w-64 gap-4">
-            {tabMenu?.map((item) => (
-              <TabsTrigger
-                key={item?.value}
-                value={item?.value}
-                className="bg-white/10 w-full py-2.5 text-white data-[state=active]:bg-hoverColor hover:bg-lightSky/50 text-xs sm:text-sm"
-              >
-                <div className="flex items-center gap-1.5 md:w-[50%] md:gap-3">
-                  <item.icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                  {item?.title}
+          <Tabs
+            defaultValue="experience"
+            className="w-full flex flex-col md:flex-row gap-6 md:gap-10"
+          >
+            <TabsList className="flex md:flex-col h-full bg-transparent md:w-64 gap-4">
+              {tabMenu.map((item) => (
+                <TabsTrigger
+                  key={item.value}
+                  value={item.value}
+                  className="bg-white/10 w-full py-2.5 text-white data-[state=active]:bg-hoverColor hover:bg-lightSky/50 text-xs sm:text-sm"
+                >
+                  <div className="flex items-center gap-1.5 md:w-[50%] md:gap-3">
+                    <item.icon className="w-4 h-4 md:h-5 md:w-5" />
+                    {item.title}
+                  </div>
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            <div className="flex-1 min-h-[400px]">
+              <TabsContent value="experience">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-2xl font-bold mb-6 text-lightSky"
+                >
+                  {tabContent.experience.title}
+                </motion.h2>
+                <div className="space-y-6">
+                  {tabContent.experience.items.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="border rounded-lg border-lightSky/20 p-6"
+                    >
+                      <div className="flex justify-between items-start mb-4">
+                        <div>
+                          <h3 className="text-lg font-semibold">{item.role}</h3>
+                          <p className="text-muted-foreground">
+                            {item.company}
+                          </p>
+                        </div>
+                        <div className="flex items-center text-muted-foreground">
+                          <Calendar className="h-4 w-4 mr-2" />
+                          {item.period}
+                        </div>
+                      </div>
+                      <p className="mb-4">{item.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {item.highlights.map((highlight, i) => (
+                          <Badge key={i} variant="secondary">
+                            {highlight}
+                          </Badge>
+                        ))}
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-          <div className="flex-1 min-h-[400px]">
-            <TabsContent value="experience">
-              <motion.h2
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              className="text-2xl font-bold text-lightSky"
-              >{tabContent.experience.title}</motion.h2>
-              
-                <div className="space-y-6 w-full">
-                {tabContent?.experience?.items.map((item, index) => (
-                  <motion.div key={index} className="border rounded-lg border-lightSky/20 p-6">
-                   <div className="flex items-start justify-between mb-4">
+              </TabsContent>
+              <TabsContent value="education">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-2xl font-bold mb-6 text-lightSky"
+                >
+                  {tabContent.education.title}
+                </motion.h2>
+                <div className="space-y-6">
+                  {tabContent.education.items.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="border rounded-lg border-lightSky/20 p-6"
+                    >
+                      <div className="flex justify-between items-start mb-4">
+                        <div>
+                          <h3 className="text-lg font-semibold">
+                            {item.degree}
+                          </h3>
+                          <p className="text-muted-foreground">
+                            {item.institution}
+                          </p>
+                        </div>
+                        <div className="flex items-center text-muted-foreground">
+                          <Calendar className="h-4 w-4 mr-2" />
+                          {item.period}
+                        </div>
+                      </div>
+                      <p className="mb-4">{item.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {item.achievements.map((achievement, i) => (
+                          <Badge key={i} variant="secondary">
+                            {achievement}
+                          </Badge>
+                        ))}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </TabsContent>
+              <TabsContent value="skills">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-2xl font-bold mb-6 text-lightSky"
+                >
+                  {tabContent.skills.title}
+                </motion.h2>
+                <div className="space-y-6">
+                  {tabContent.skills.categories.map((category, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="border rounded-lg border-lightSky/20 p-6"
+                    >
+                      <h3 className="text-lg font-semibold mb-4">
+                        {category.name}
+                      </h3>
+                      <p className="text-sm text-white/60 mb-4 font-normal leading-7">
+                        {category.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {category.skills.map((skill, i) => (
+                          <Badge key={i} variant="secondary">
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </TabsContent>
+              <TabsContent value="about">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-2xl font-bold mb-6 text-lightSky"
+                >
+                  {tabContent.about.title}
+                </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="border rounded-lg border-lightSky/20 p-6"
+                >
+                  <p className="mb-6 text-lg">{tabContent.about.bio}</p>
+                  <div className="space-y-4">
                     <div>
-                      <h3 className="text-lg font-semibold">{item?.role}</h3>
-                      <p className="text-muted-foreground">{item?.company}</p>
+                      <h3 className="text-lg font-semibold mb-2">Interests</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {tabContent.about.interests.map((interest, i) => (
+                          <Badge key={i} variant="secondary">
+                            {interest}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex items-center text-muted-foreground">
-                      <Calendar className="h-4 w-4 mr-2"/>
-                      {item?.period}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Languages</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {tabContent.about.languages.map((language, i) => (
+                          <Badge key={i} variant="secondary">
+                            {language}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
-                   </div>
-                   <p className="mb-4 text-white">{item?.description}</p>
-                  </motion.div>
-                
-
-                ))}
-             </div>
-            </TabsContent>
-          </div>
-        </Tabs>
-      </PageLayout>
-    </div>
+                  </div>
+                </motion.div>
+              </TabsContent>
+            </div>
+          </Tabs>
+        </motion.div>
+      </Container>
+    </section>
   );
-};
-
-export default ResumePage;
+}
