@@ -1,6 +1,5 @@
 import useOutsideClick from "@/hooks/use-outside-click";
 import { X } from "lucide-react";
-import React, { use } from "react";
 import Logo from "./Logo";
 import { navbarData } from "@/app/constants";
 import Link from "next/link";

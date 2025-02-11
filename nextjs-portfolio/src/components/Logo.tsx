@@ -6,21 +6,25 @@ interface Props{
    title: string;
    subtitle: string;
 }
-const Logo = (
-    {className, title, subtitle}:Props
-) => {
+
+const Logo = ({ className, title, subtitle }: Props) => {
   return (
     <div className="text-2xl group">
-        <Link href={'/'}>
-        <h2 className={cn(
-            "font-semibold hover:text-hoverColor hoverEffect"
-        )}>
-       {title} <span className="text-lightSky group-hover:text-white hoverEffect"
-       >{subtitle}</span>
+      <Link href="/">
+        <h2
+          className={cn(
+            "font-bold text-2xl hover:text-hoverColor hoverEffect",
+            className
+          )}
+        >
+          {title}{" "}
+          <span className="text-lightSky group-hover:text-white hoverEffect">
+            {subtitle}
+          </span>
         </h2>
-        </Link>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

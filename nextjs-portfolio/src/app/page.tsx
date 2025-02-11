@@ -5,7 +5,6 @@ import SocialLinks from "@/components/SocialLinks";
 import Statistics from "@/components/Statistics";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
                 Software Engineer
               </h3>
               <h2 className="text-3xl md:text-5xl mb-2 text-white">
-                Hello I'm
+                Hello I&apos;m
               </h2>
               <h1 className="text-lightSky text-5xl md:text-7xl tracking-normal mb-4">
                 Shehreen
