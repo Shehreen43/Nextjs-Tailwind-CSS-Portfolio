@@ -19,37 +19,37 @@ export const servicesData = [
     _id: "01",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
   {
     _id: "02",
     title: "App Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
   {
     _id: "03",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
   {
     _id: "04",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
   {
     _id: "05",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
   {
     _id: "06",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ut tempore et amet numquam nostrum corrupti doloremque possimus fugit!",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "/",
   },
 ];
 
