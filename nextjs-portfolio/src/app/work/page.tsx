@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const WorkPage = () => {
-//   return (
-//     <div>WorkPage</div>
-//   )
-// }
-
-// export default WorkPage;
-
 "use client";
 
 import * as React from "react";
@@ -42,7 +32,7 @@ const projects = [
     description:
       "A modern e-commerce platform built with Next.js, featuring a responsive design, user authentication, and integration with a headless CMS for easy content management.",
     stack: ["Next.js", "Tailwind CSS", "Strapi", "PostgreSQL"],
-    image: "/images/projectOne.PNG",
+    image: "/images/project1.png",
     liveUrl: "https://example-ecommerce.com",
     githubUrl: "https://github.com/example/ecommerce",
   },
@@ -53,7 +43,7 @@ const projects = [
     description:
       "A sleek task management application that helps users organize their daily activities, set priorities, and track progress. Built with React and Redux for state management.",
     stack: ["React", "Redux", "Styled Components", "Firebase"],
-    image: "/images/projectTwo.PNG",
+    image: "/images/project2.png",
     liveUrl: "https://example-taskmanager.com",
     githubUrl: "https://github.com/example/taskmanager",
   },
@@ -64,7 +54,7 @@ const projects = [
     description:
       "An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.",
     stack: ["Vue.js", "Vuex", "Chart.js", "OpenWeatherMap API"],
-    image: "/images/projectThree.PNG",
+    image: "/images/project3.png",
     liveUrl: "https://example-weatherapp.com",
     githubUrl: "https://github.com/example/weatherapp",
   },
