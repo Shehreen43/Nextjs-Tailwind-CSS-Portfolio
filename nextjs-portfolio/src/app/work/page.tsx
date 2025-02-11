@@ -22,6 +22,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Container from "@/components/Container";
+import projectOne from "@/images/project1.png";
+import projectTwo from "@/images/project2.png";
+import projectThree from "@/images/project3.png";
 
 // Dummy data for projects
 const projects = [
@@ -32,7 +35,7 @@ const projects = [
     description:
       "A modern e-commerce platform built with Next.js, featuring a responsive design, user authentication, and integration with a headless CMS for easy content management.",
     stack: ["Next.js", "Tailwind CSS", "Strapi", "PostgreSQL"],
-    image: "/images/project1.png",
+    image: projectOne,
     liveUrl: "https://example-ecommerce.com",
     githubUrl: "https://github.com/example/ecommerce",
   },
@@ -43,7 +46,7 @@ const projects = [
     description:
       "A sleek task management application that helps users organize their daily activities, set priorities, and track progress. Built with React and Redux for state management.",
     stack: ["React", "Redux", "Styled Components", "Firebase"],
-    image: "/images/project2.png",
+    image: projectTwo,
     liveUrl: "https://example-taskmanager.com",
     githubUrl: "https://github.com/example/taskmanager",
   },
@@ -54,7 +57,7 @@ const projects = [
     description:
       "An interactive weather forecast dashboard that provides real-time weather information and 5-day forecasts for multiple locations. Utilizes a third-party weather API.",
     stack: ["Vue.js", "Vuex", "Chart.js", "OpenWeatherMap API"],
-    image: "/images/project3.png",
+    image: projectThree,
     liveUrl: "https://example-weatherapp.com",
     githubUrl: "https://github.com/example/weatherapp",
   },
